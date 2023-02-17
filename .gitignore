@@ -1,0 +1,8 @@
+# Cached Python bytecode
+__pycache__/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# GitHub Personal Access Token (even though the code doesn't use it yet)
+.pat
