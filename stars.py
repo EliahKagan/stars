@@ -60,13 +60,13 @@ def get_starred_repos(user: str) -> list[dict[str, Any]]:
             repos = json.load(file)
     except OSError:
         # They were not saved. Fetch them from the API and save them.
-        logging.info(f'No saved results for %r. Using GitHub API.', user)
+        logging.info('No saved results for %r. Using GitHub API.', user)
         repos = _fetch_starred_repos(user)
         with open(path, mode='w', encoding='utf-8') as file:
             json.dump(obj=repos, fp=file, indent=4)
     else:
         # They were saved. Check that JSON decoded to the correct type.
-        logging.info(f'Loaded saved result for %r.', user)
+        logging.info('Loaded saved result for %r.', user)
         _ensure_isinstance(repos, list)
 
     return repos
