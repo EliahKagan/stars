@@ -7,3 +7,10 @@ dependencies:
   - python=3.11
   - ipykernel
   - requests
+
+  # Development dependencies
+  - flake8
+  - mypy
+  - pylint
+  - pyright
+  - types-requests

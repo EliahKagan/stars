@@ -1,3 +1,14 @@
 {
-    "notebook.output.textLineLimit": 1000
+    "notebook.output.textLineLimit": 1000,
+    "cSpell.words": [
+        "conda",
+        "devcontainers",
+        "Eliah",
+        "ipykernel",
+        "Kagan",
+        "mypy",
+        "overlappingly",
+        "pylint",
+        "pyright"
+    ]
 }
