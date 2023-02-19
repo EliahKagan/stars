@@ -5,9 +5,11 @@
         "devcontainers",
         "Eliah",
         "ipykernel",
+        "ipynb",
         "Kagan",
         "mypy",
         "overlappingly",
+        "pipenv",
         "pylint",
         "pyright"
     ]
