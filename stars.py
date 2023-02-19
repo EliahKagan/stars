@@ -4,6 +4,7 @@ __all__ = ['get_starred_repos', 'extract_topics']
 
 import collections
 from collections.abc import Sequence, Mapping
+import datetime
 import itertools
 import json
 import logging
@@ -11,6 +12,9 @@ import operator
 from typing import Any
 
 import requests
+
+_REQUEST_TIMEOUT = datetime.timedelta(minutes=2)
+"""The maximum time we wait for any single request to complete."""
 
 
 def _typename(obj: object) -> str:
@@ -30,8 +34,10 @@ def _fetch_starred_repos(user: str) -> list[dict[str, Any]]:
     repos = []
 
     for page in itertools.count(1):
-        url = f'https://api.github.com/users/{user}/starred?page={page}'
-        response = requests.get(url)
+        response = requests.get(
+            url=f'https://api.github.com/users/{user}/starred?page={page}',
+            timeout=_REQUEST_TIMEOUT.total_seconds(),
+        )
         response.raise_for_status()
         part = response.json()
         _ensure_isinstance(part, list)
