@@ -1,0 +1,23 @@
+name: mypy Typecheck
+
+on: [push, pull_request]
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    name: Typecheck
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v3
+
+      - name: Install pipenv
+        run: pip install pipenv
+
+      - name: Generate requirements.txt
+        run: pipenv requirements >requirements.txt
+
+      - name: mypy Typecheck
+        uses: jpetrucciani/mypy-check@master
+        with:
+          python_version: "3.11"
+          requirements_file: "requirements.txt"
