@@ -1,16 +1,23 @@
 {
     "notebook.output.textLineLimit": 1000,
     "cSpell.words": [
+        "autobuild",
+        "bewuethr",
         "bierner",
+        "buildscript",
+        "codeql",
         "conda",
         "devcontainer",
         "devcontainers",
         "eamodio",
         "Eliah",
+        "gaurav",
         "globstar",
         "guiyomh",
         "ipykernel",
         "ipynb",
+        "jakebailey",
+        "jpetrucciani",
         "Kagan",
         "lukewiwa",
         "mhutchie",
@@ -23,6 +30,7 @@
         "shopt",
         "stkb",
         "tamasfe",
-        "timonwong"
+        "timonwong",
+        "typecheck"
     ]
 }
