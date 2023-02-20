@@ -1,8 +1,9 @@
 <!-- SPDX-License-Identifier: 0BSD -->
 
-# Stars
+# stars
 
-*Query a GitHub user’s starred repositories and their topics*
+This is some Python code to query a GitHub user’s starred repositories and
+their topics.
 
 ## Setup
 
