@@ -9,11 +9,19 @@ jobs:
     steps:
       - name: Check out source repository
         uses: actions/checkout@v3
+
       - name: Set up Python environment
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
-      - name: GitHub Action for pylint
-        uses: cclauss/GitHub-Action-for-pylint@0.7.0
-        with:
-          args: bash -c 'shopt -s globstar; pylint **/*.py'
+
+      - name: Install pipenv
+        run: pip install pipenv
+
+      - name: Install dependencies
+        run: pipenv install -d
+
+      - name: Run pylint
+        run: |
+          shopt -s globstar
+          pipenv run pylint -- **/*.py
