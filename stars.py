@@ -11,7 +11,7 @@
 # OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 # PERFORMANCE OF THIS SOFTWARE.
 
-"""Querying a GitHub user's starred repositories and their topics."""
+"""Query a GitHub user's starred repositories and their topics."""
 
 __all__ = ['get_starred_repos', 'extract_topics']
 

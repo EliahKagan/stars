@@ -2,7 +2,7 @@
 
 # Stars
 
-*Querying a GitHub user’s starred repositories and their topics*
+*Query a GitHub user’s starred repositories and their topics*
 
 ## Setup
 
