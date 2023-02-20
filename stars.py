@@ -79,7 +79,7 @@ def get_starred_repos(user: str) -> list[dict[str, Any]]:
             json.dump(obj=repos, fp=file, indent=4)
     else:
         # They were saved. Check that JSON decoded to the correct type.
-        logging.info(f'Loaded saved result for {user}.')
+        logging.info('Loaded saved result for %r.', user)
         _ensure_isinstance(repos, list)
 
     return repos
