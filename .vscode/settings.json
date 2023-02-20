@@ -1,16 +1,26 @@
 {
     "notebook.output.textLineLimit": 1000,
     "cSpell.words": [
+        "bierner",
         "conda",
+        "devcontainer",
         "devcontainers",
+        "eamodio",
         "Eliah",
+        "guiyomh",
         "ipykernel",
         "ipynb",
         "Kagan",
+        "lukewiwa",
+        "mhutchie",
         "mypy",
         "overlappingly",
         "pipenv",
         "pylint",
-        "pyright"
+        "pyright",
+        "shellcheck",
+        "stkb",
+        "tamasfe",
+        "timonwong"
     ]
 }

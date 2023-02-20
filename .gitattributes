@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: 0BSD
+
+# Default to LF (Unix-style) line endings.
+* text=auto eol=lf
+
+# Shell scripts MUST use LF line endings, even if the above default is changed.
+/.devcontainer/initialize text eol=lf
+/.devcontainer/onCreate text eol=lf
+
+# Batch files MUST use CRLF (Windows-style) line endings.
+*.cmd text eol=crlf

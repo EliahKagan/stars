@@ -6,3 +6,6 @@ __pycache__/
 
 # GitHub Personal Access Token (even though the code doesn't use it yet)
 .pat
+
+# Carried-in configuration when building a dev container
+/.inherited-configuration
