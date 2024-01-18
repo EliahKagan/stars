@@ -25,4 +25,4 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: pyright Typecheck
-        uses: jakebailey/pyright-action@v1
+        uses: jakebailey/pyright-action@v2
